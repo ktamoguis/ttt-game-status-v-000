@@ -68,5 +68,5 @@ def winner?(board)
       "O"
     end
   end
-  
+
 end
