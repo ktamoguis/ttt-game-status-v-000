@@ -58,7 +58,9 @@ def over?(board)
 end
 
 def winner?(board)
-  if won?(board)
+  if !won?(board)
+    nil
+  else
     winner = won?(board)
     if board[winner[0]] == "X"
       "X"
@@ -66,5 +68,5 @@ def winner?(board)
       "O"
     end
   end
-  nil
+  
 end
